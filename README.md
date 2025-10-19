@@ -1,250 +1,277 @@
-# 🚀 NodeMaster - Dominando Node.js do Absoluto Zero
+# 🚀 API de Vídeos - Node.js do Zero
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![Status](https://img.shields.io/badge/status-active-success.svg?style=for-the-badge)
+![Fastify](https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Rocketseat](https://img.shields.io/badge/Rocketseat-8257E5?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgBnZKxDcIwEEXPJhKFW7CBWIERGIERyAZhBDZgBEZgBEZgBEaAEegQEqVzf0nOsg0S/+k+v3/2nQEw5w+MMZfknPOitV7knB/Mcy6lPBljLmVZHt77x1LKE+XcWntXSh1TSm9N03wYY67MOR+llF6892dK6RXl3Fp7q6rqkHN+aps2xvjKOXdijLlgjLlgjFm2bXtgjLlgjFm2bXtgjLlgjFm2bXtgjLlgjFm2bXtgjLlgjFm2bXtgjLlgjFm2bTt+AXTfhSZwzxJxAAAAAElFTkSuQmCC&logoColor=white)
 
-> 📚 Uma jornada completa de aprendizado em Node.js, desde os conceitos fundamentais até aplicações avançadas do mundo real
+> 📚 Projeto desenvolvido durante o curso **Node.js do Zero** da Rocketseat, criando uma API RESTful completa com Node.js, Fastify e PostgreSQL.
 
-## 🎯 Sobre o Projeto
+## 📋 Sobre o Projeto
 
-O **NodeMaster** é um projeto educacional que documenta minha jornada de aprendizado em Node.js, partindo do zero absoluto até a construção de aplicações completas e profissionais. Este repositório serve como guia prático e referência para desenvolvedores que desejam dominar o ecossistema Node.js.
+Este projeto é uma **API REST** para gerenciamento de vídeos, desenvolvida como parte do aprendizado prático de Node.js. A aplicação demonstra conceitos fundamentais de desenvolvimento backend, incluindo criação de servidor HTTP, rotas, operações CRUD, integração com banco de dados e deploy em produção.
 
-### 💡 Objetivos do Projeto
+### 🎯 Objetivos de Aprendizado
 
-- 🎓 **Aprender fazendo**: Código prático e exemplos reais
-- 📖 **Documentar a jornada**: Registro de desafios e soluções
-- 🛠️ **Construir portfolio**: Projetos demonstrando habilidades
-- 🤝 **Compartilhar conhecimento**: Ajudar outros desenvolvedores
+- ✅ Criar um servidor HTTP do zero com Node.js
+- ✅ Trabalhar com o framework Fastify
+- ✅ Implementar operações CRUD completas
+- ✅ Integrar com banco de dados PostgreSQL
+- ✅ Gerenciar variáveis de ambiente
+- ✅ Preparar aplicação para deploy
 
-## ✨ O Que Você Vai Encontrar Aqui
+## ✨ Funcionalidades
 
-### 📚 Conceitos Fundamentais
-- Fundamentos do JavaScript assíncrono
-- Event Loop e Non-blocking I/O
-- Callbacks, Promises e Async/Await
-- Módulos e Sistema de Pacotes (NPM)
-- Sistema de arquivos (fs)
-- Streams e Buffers
-
-### 🌐 Desenvolvimento Web
-- Criação de servidores HTTP
-- Framework Express.js
-- Roteamento e Middlewares
-- RESTful APIs
-- Autenticação e Autorização
-- Validação de dados
-
-### 💾 Banco de Dados
-- Integração com MongoDB
-- SQL com PostgreSQL/MySQL
-- ORMs (Sequelize, Prisma)
-- Queries e Relacionamentos
-- Migrations e Seeds
-
-### 🔧 Ferramentas e Boas Práticas
-- Gerenciamento de variáveis de ambiente
-- Tratamento de erros
-- Logging e Debugging
-- Testes (Jest, Mocha)
-- Segurança (Helmet, CORS)
-- Documentação de APIs (Swagger)
+- 📝 **Criar vídeos** - Adicionar novos vídeos ao banco de dados
+- 📖 **Listar vídeos** - Visualizar todos os vídeos cadastrados
+- 🔍 **Buscar vídeos** - Filtrar vídeos por título
+- ✏️ **Atualizar vídeos** - Editar informações de vídeos existentes
+- 🗑️ **Deletar vídeos** - Remover vídeos do banco de dados
 
 ## 🛠️ Tecnologias Utilizadas
 
-```json
-{
-  "runtime": "Node.js v20+",
-  "linguagem": "JavaScript (ES6+)",
-  "framework": "Express.js",
-  "databases": ["MongoDB", "PostgreSQL"],
-  "testing": ["Jest", "Supertest"],
-  "tools": ["Nodemon", "ESLint", "Prettier"]
-}
-```
+### Backend
+- **[Node.js](https://nodejs.org/)** - Runtime JavaScript
+- **[Fastify](https://www.fastify.io/)** - Framework web de alta performance
+- **[PostgreSQL](https://www.postgresql.org/)** - Banco de dados relacional
+
+### Bibliotecas
+- **[postgres](https://www.npmjs.com/package/postgres)** - Cliente PostgreSQL para Node.js
+- **[dotenv](https://www.npmjs.com/package/dotenv)** - Gerenciamento de variáveis de ambiente
 
 ## 📋 Pré-requisitos
 
-Antes de começar, você precisa ter instalado:
+Antes de começar, certifique-se de ter instalado em sua máquina:
 
-- [Node.js](https://nodejs.org/) (versão 18.x ou superior)
+- [Node.js](https://nodejs.org/) - versão 18 ou superior
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
-- [Git](https://git-scm.com/)
-- Editor de código ([VS Code](https://code.visualstudio.com/) recomendado)
-- [MongoDB](https://www.mongodb.com/) (opcional, dependendo do projeto)
-- [PostgreSQL](https://www.postgresql.org/) (opcional, dependendo do projeto)
+- Conta no [Neon](https://neon.tech/) ou PostgreSQL local
 
-## 🚀 Como Começar
+## 🚀 Como Executar o Projeto
 
-### 1. Clone o repositório
+### 1️⃣ Clone o repositório
 
 ```bash
 git clone https://github.com/Guiilopes97/node-do-zero.git
 cd node-do-zero
 ```
 
-### 2. Instale as dependências
+### 2️⃣ Instale as dependências
 
 ```bash
 npm install
-# ou
-yarn install
 ```
 
-### 3. Configure as variáveis de ambiente
+### 3️⃣ Configure as variáveis de ambiente
 
-```bash
-cp .env.example .env
-# Edite o arquivo .env com suas configurações
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+PGHOST=seu-host.neon.tech
+PGDATABASE=neondb
+PGUSER=seu-usuario
+PGPASSWORD=sua-senha
+ENDPOINT_ID=seu-endpoint-id
+PORT=3333
 ```
 
-### 4. Execute o projeto
+> 💡 **Dica:** Use o arquivo `.env.example` como referência
+
+### 4️⃣ Crie a tabela no banco de dados
 
 ```bash
-# Modo desenvolvimento (com hot reload)
+node create-table.js
+```
+
+### 5️⃣ Execute o servidor
+
+**Modo desenvolvimento (com hot reload):**
+```bash
 npm run dev
-
-# Modo produção
-npm start
-
-# Executar testes
-npm test
 ```
+
+**Modo produção:**
+```bash
+npm start
+```
+
+O servidor estará rodando em: `http://localhost:3333`
+
+## 📡 Endpoints da API
+
+### Documentação das Rotas
+
+#### 🏠 Listar todas as rotas
+```http
+GET /
+```
+
+Retorna documentação de todas as rotas disponíveis.
+
+---
+
+#### ➕ Criar um novo vídeo
+```http
+POST /videos
+Content-Type: application/json
+
+{
+  "title": "Título do vídeo",
+  "description": "Descrição do vídeo",
+  "duration": 180
+}
+```
+
+**Resposta:** `201 Created`
+
+---
+
+#### 📋 Listar todos os vídeos
+```http
+GET /videos
+```
+
+**Resposta:**
+```json
+[
+  {
+    "id": "uuid-do-video",
+    "title": "Título do vídeo",
+    "description": "Descrição do vídeo",
+    "duration": 180
+  }
+]
+```
+
+---
+
+#### 🔍 Buscar vídeos por título
+```http
+GET /videos?search=node
+```
+
+Retorna apenas vídeos que contenham "node" no título.
+
+---
+
+#### ✏️ Atualizar um vídeo
+```http
+PUT /videos/:id
+Content-Type: application/json
+
+{
+  "title": "Novo título",
+  "description": "Nova descrição",
+  "duration": 200
+}
+```
+
+**Resposta:** `204 No Content`
+
+---
+
+#### 🗑️ Deletar um vídeo
+```http
+DELETE /videos/:id
+```
+
+**Resposta:** `204 No Content`
 
 ## 📁 Estrutura do Projeto
 
 ```
 node-do-zero/
-├── 📂 01-fundamentos/          # Conceitos básicos do Node.js
-│   ├── hello-world.js
-│   ├── modules.js
-│   └── async-await.js
-│
-├── 📂 02-http-server/          # Criando servidores HTTP
-│   ├── basic-server.js
-│   └── routing.js
-│
-├── 📂 03-express/              # Framework Express.js
-│   ├── routes/
-│   ├── middlewares/
-│   └── controllers/
-│
-├── 📂 04-database/             # Integração com bancos de dados
-│   ├── mongodb/
-│   ├── postgresql/
-│   └── models/
-│
-├── 📂 05-api-rest/             # APIs RESTful completas
-│   ├── src/
-│   ├── tests/
-│   └── docs/
-│
-├── 📂 06-autenticacao/         # Autenticação e segurança
-│   ├── jwt/
-│   ├── oauth/
-│   └── sessions/
-│
-├── 📂 07-testes/               # Testes automatizados
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
-│
-└── 📂 08-projetos-completos/   # Aplicações finais
-    ├── blog-api/
-    ├── ecommerce-api/
-    └── chat-realtime/
+├── 📄 server.js              # Servidor principal e rotas
+├── 📄 database-memory.js     # Implementação em memória (para testes)
+├── 📄 database-postgres.js   # Implementação com PostgreSQL
+├── 📄 db.js                  # Configuração do banco de dados
+├── 📄 create-table.js        # Script para criar tabela
+├── 📄 routes.http            # Exemplos de requisições HTTP
+├── 📄 package.json           # Dependências e scripts
+├── 📄 .env                   # Variáveis de ambiente (não versionado)
+├── 📄 .gitignore             # Arquivos ignorados pelo Git
+└── 📄 README.md              # Documentação do projeto
 ```
 
-## 🎓 Roteiro de Aprendizado
+## 🗄️ Estrutura do Banco de Dados
 
-### Nível Iniciante 🌱
-- [ ] Configurar ambiente de desenvolvimento
-- [ ] Entender o Event Loop
-- [ ] Criar primeiro servidor HTTP
-- [ ] Trabalhar com módulos
-- [ ] Manipular arquivos
+### Tabela: `videos`
 
-### Nível Intermediário 🌿
-- [ ] Dominar Express.js
-- [ ] Criar API RESTful
-- [ ] Integrar banco de dados
-- [ ] Implementar autenticação
-- [ ] Validação de dados
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `id` | TEXT (UUID) | Identificador único do vídeo |
+| `title` | VARCHAR(255) | Título do vídeo |
+| `description` | TEXT | Descrição detalhada |
+| `duration` | INTEGER | Duração em segundos |
 
-### Nível Avançado 🌳
-- [ ] Escrever testes automatizados
-- [ ] Implementar WebSockets
-- [ ] Otimização de performance
-- [ ] Deploy e CI/CD
-- [ ] Arquitetura escalável
+## 🧪 Testando a API
 
-## 🔥 Projetos Destaque
+### Usando o REST Client (VS Code)
 
-### 1. 📝 Blog API
-Uma API RESTful completa para gerenciamento de blog com autenticação JWT, upload de imagens e comentários.
+Se você usa o VS Code, instale a extensão [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) e use o arquivo `routes.http` para testar todas as rotas.
 
-**Stack:** Express + MongoDB + JWT
+### Usando cURL
 
-### 2. 🛒 E-commerce API
-Sistema de e-commerce com carrinho de compras, processamento de pagamentos e gerenciamento de estoque.
-
-**Stack:** Express + PostgreSQL + Stripe
-
-### 3. 💬 Chat em Tempo Real
-Aplicação de chat com WebSockets, salas privadas e notificações em tempo real.
-
-**Stack:** Socket.io + Express + Redis
-
-## 📚 Recursos de Aprendizado
-
-- 📖 [Documentação Oficial do Node.js](https://nodejs.org/docs/)
-- 📘 [Guia Express.js](https://expressjs.com/)
-- 🎥 [Vídeos recomendados](#)
-- 📝 [Artigos e tutoriais](#)
-- 💬 [Comunidade Discord/Slack](#)
-
-## 🧪 Testes
-
+**Criar vídeo:**
 ```bash
-# Executar todos os testes
-npm test
-
-# Testes com cobertura
-npm run test:coverage
-
-# Testes em modo watch
-npm run test:watch
-
-# Testes de integração
-npm run test:integration
+curl -X POST http://localhost:3333/videos \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Meu Vídeo",
+    "description": "Descrição do vídeo",
+    "duration": 120
+  }'
 ```
 
-## 🤝 Como Contribuir
+**Listar vídeos:**
+```bash
+curl http://localhost:3333/videos
+```
 
-Contribuições são muito bem-vindas! Este é um projeto de aprendizado e toda ajuda é valiosa.
+### Usando Postman ou Insomnia
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/NovaFeature`)
-5. Abra um Pull Request
+Importe as requisições do arquivo `routes.http` ou configure manualmente usando a documentação dos endpoints acima.
 
-### 💡 Ideias para Contribuir
-- Adicionar novos exemplos
-- Melhorar documentação
-- Corrigir bugs
-- Sugerir novos projetos
-- Compartilhar recursos de aprendizado
+## 🌐 Deploy
 
-## 📝 Anotações e Aprendizados
+Este projeto está preparado para deploy em plataformas como:
 
-Mantenho um [LEARNING.md](LEARNING.md) com minhas anotações, desafios enfrentados e soluções encontradas durante o aprendizado. Confira para insights e dicas!
+- **[Render](https://render.com/)** ✅ Recomendado
+- **[Railway](https://railway.app/)**
+- **[Fly.io](https://fly.io/)**
+- **[Heroku](https://www.heroku.com/)**
 
-## 🐛 Problemas Conhecidos
+### Exemplo de Deploy no Render
 
-Veja a aba [Issues](https://github.com/Guiilopes97/node-do-zero/issues) para uma lista completa de problemas conhecidos e features propostas.
+1. Conecte seu repositório GitHub
+2. Configure as variáveis de ambiente
+3. O Render detectará automaticamente o `package.json`
+4. Deploy automático a cada push!
 
-## 📄 Licença
+## 📚 Conceitos Aprendidos
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- 🔹 Criação de servidor HTTP com Node.js
+- 🔹 Framework Fastify e suas vantagens
+- 🔹 Padrão REST e operações CRUD
+- 🔹 Integração com banco de dados PostgreSQL
+- 🔹 Uso de ES Modules (`import/export`)
+- 🔹 Async/await e Promises
+- 🔹 Query strings e parâmetros de rota
+- 🔹 Variáveis de ambiente e segurança
+- 🔹 Abstração e boas práticas de código
+
+## 🎓 Sobre o Curso
+
+Este projeto foi desenvolvido durante o curso **Node.js do Zero** da [Rocketseat](https://www.rocketseat.com.br/), ministrado por **Diego Fernandes**.
+
+### 🔗 Links Úteis
+
+- [🎥 Curso Original](https://www.youtube.com/watch?v=hHM-hr9q4mo)
+- [📚 Documentação Fastify](https://www.fastify.io/)
+- [🐘 Neon PostgreSQL](https://neon.tech/)
+- [💜 Rocketseat](https://www.rocketseat.com.br/)
+
+
+## 📝 Licença
+
+Este projeto está sob a licença ISC.
